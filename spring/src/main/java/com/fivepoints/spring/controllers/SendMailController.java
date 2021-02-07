@@ -5,12 +5,14 @@ import com.fivepoints.spring.services.SendMailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
 
 @RestController
+@RequestMapping("/e-mails")
 public class SendMailController {
 
     @Autowired
